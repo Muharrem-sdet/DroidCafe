@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView iceCream;
     private ImageView froyo;
     private FloatingActionButton fab;
+    public static final String EXTRA_MESSAGE = "com.example.droidcafe.MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +28,18 @@ public class MainActivity extends AppCompatActivity {
         froyo = findViewById(R.id.froyo);
         fab = findViewById(R.id.fab);
 
-        donut.setOnClickListener(this::onClickToast);
-        iceCream.setOnClickListener(this::onClickToast);
-        froyo.setOnClickListener(this::onClickToast);
+        donut.setOnClickListener(this::onClickImage);
+        iceCream.setOnClickListener(this::onClickImage);
+        froyo.setOnClickListener(this::onClickImage);
         fab.setOnClickListener(v -> onFABClick());
     }
 
-    public void onClickToast(View v) {
+    public void onClickImage(View v) {
         String message = "You ordered " + v.getContentDescription().toString() + ".";
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, OrderActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     public void onFABClick() {
