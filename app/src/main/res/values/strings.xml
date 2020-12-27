@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Droid Cafe</string>
+    <string name="donut_text">Donuts are glazed and sprinkled with candy.</string>
+    <string name="ice_cream_text">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo_text">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_cd">a donut</string>
+    <string name="ice_cream_cd">an ice cream sandwich</string>
+    <string name="froyo_cd">a FroYo</string>
+    <string name="cart_icon_cd">Add to shopping cart</string>
+</resources>
