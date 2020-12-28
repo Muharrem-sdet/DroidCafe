@@ -12,11 +12,17 @@
     <string name="address_label_text">Address</string>
     <string name="enter_address_hint">Enter your address</string>
     <string name="phone_label_text">Phone</string>
-    <string name="enter_phone_hint">Enter your phone number</string>
+    <string name="enter_phone_hint">Enter your phone</string>
     <string name="note_label_text">Note</string>
     <string name="enter_note_hint">Enter your note</string>
     <string name="delivery_label_text">Choose a delivery method: </string>
     <string name="rb1_sameday_label">Same day messenger service</string>
     <string name="rb2_nextday_label">Next day ground delivery</string>
     <string name="rb3_pickup_label">Pick up</string>
+    <string-array name="phone_type_labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
 </resources>
